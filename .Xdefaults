@@ -1,7 +1,8 @@
 URxvt.saveLines:9001
 URxvt.scrollBar: false
-URxvt*geometry: 96x30
-URxvt*.transparent: false
+URxvt*geometry: 80x20
+#URxvt*.transparent: true
+#URxvt*.shading: 15 
 
 URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
 
@@ -13,7 +14,7 @@ URxvt.keysym.M-s:           perl:keyboard-select:search
 URxvt.keysym.M-C-c:         perl:clipboard:copy
 URxvt.keysym.M-C-v:         perl:clipboard:paste
 
-URxvt*font: xft:Inconsolata:pixelsize=14
+URxvt*font: xft:Inconsolata:pixelsize=12
 
 *foreground: #d2d2ca
 *background: #2f2f2f
