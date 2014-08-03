@@ -1,0 +1,93 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+# For more information about tint2, see:
+# http://code.google.com/p/tint2/wiki/Welcome
+#
+# For more config file examples, see:
+# http://crunchbanglinux.org/forums/topic/3232/my-tint2-config/
+
+# BACKGROUND AND BORDER
+     
+rounded = 0
+border_width = 0
+background_color = #111111 100
+border_color = #ecedee 0
+
+
+
+
+# PANEL
+panel_monitor = all
+panel_position = bottom center
+panel_size = 100% 20
+panel_margin = 0 0
+panel_padding = 7 0
+font_shadow = 0
+panel_background_id = 1
+wm_menu = 1
+panel_dock = 0
+panel_layer = bottom
+#panel_mode = single_monitor
+
+
+
+# TASKS
+
+task_icon = 0
+task_text = 1
+task_maximum_size = 150 16
+task_centered = 0
+task_padding = 6 3
+task_font = cure 6
+task_font_color = #606060 100
+task_background_id = 0
+task_icon_asb = 100 0 0
+# example:
+task_active_background_id = 1
+task_active_font_color = #ecedee 100
+task_active_icon_asb = 100 0 0
+urgent_nb_of_blink = 3
+#task_icon_size = 13
+
+
+
+# TASKBAR
+taskbar_mode = single_desktop
+taskbar_padding = 2 3 2
+taskbar_background_id = 0
+#taskbar_active_background_id = 1
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray = 1
+systray_padding = 0 0 0
+systray_background_id = 0
+systray_sort = left2right
+systray_icon_size = 22
+systray_icon_asb = 80 0 0
+
+# CLOCK
+#---------------------------------------------
+time1_format = %H:%M / %a %d %b
+#time1_font = Museo 8
+time1_font = AvantGardeLTMedium 8
+#time2_format = %A %d %B
+#time2_font = Monospace 6
+clock_font_color = #151515 60
+clock_padding = 4 0
+
+
+# TOOLTIP
+     
+tooltip_font_color = #ecedee 100
+tooltip_font = cure 6
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
