@@ -136,6 +136,11 @@ XCalc*ShapeStyle:                         rectangle
 !#include "/home/marcus/.colours/bright"
 !#include "/home/marcus/.colours/lich"
 !#include "/home/marcus/.colours/rab"
-#include "/home/marcus/.colours/reasons"
+!#include "/home/marcus/.colours/reasons"
 !#include "/home/marcus/.colours/zenburn"
+#include "/home/marcus/.colours/current"
 
+! Xcursor --------------------------------------------------  
+
+Xcursor*theme: RingBlue
+Xcursor.size: 22

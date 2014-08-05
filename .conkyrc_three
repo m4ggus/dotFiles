@@ -1,0 +1,24 @@
+double_buffer yes
+own_window  yes
+own_window_transparent no
+own_window_type normal
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager 
+draw_borders no
+draw_graph_borders no
+border_margin 3
+draw_shades yes
+gap_x 0
+gap_y 15
+alignment top_left
+update_interval 1
+default_color  8f8f8f
+own_window_colour 333333
+#own_window_colour 494949
+use_xft yes
+xftfont Inconsolata:size=7
+
+override_utf8_locale yes
+use_spacer none
+minimum_size 1920 0
+TEXT
+${goto 5}Date: ${color e0e0e0}${font sans:size=7}${time %d/%m/%y}${color}${font}  Time: ${color e0e0e0}${font sans:size=7}${time %H:%M}${color}${font}  |  Kernel: ${color e0e0e0}${font sans:size=7}$kernel${color}${font}  Uptime: ${color e0e0e0}${font sans:size=7}${uptime_short}${color}${font}  |  Cpu: ${color e0e0e0}${font sans:size=7}${cpu}%${color}${font}  Ram: ${color e0e0e0}${font sans:size=7}${memperc}%${color}${font}  Swap: ${color e0e0e0}${font sans:size=7}${swapperc}%${color}${font}  |  Nvidia: ${color e0e0e0}${font sans:size=7}${hwmon temp 1}°C${color}${font}  |  ${color e0e0e0}${font sans:size=7}hdd${color}${font} ${fs_used_perc /}% ${fs_used /} / ${fs_size /}  |  ${color e0e0e0}${font sans:size=7}verbatim${color}${font} ${fs_used_perc /media/darek/verbatim}% ${fs_used /media/darek/verbatim} / ${fs_size /media/darek/verbatim}  |  ${color e0e0e0}${font sans:size=7}toshiba${color}${font} ${fs_used_perc /media/darek/toshiba}% ${fs_used /media/darek/toshiba} / ${fs_size /media/darek/toshiba}  |  ${color e0e0e0}${font sans:size=7}se9${color}${font} ${fs_used_perc /media/darek/se9}% ${fs_used /media/darek/se9} / ${fs_size /media/darek/se9}  |  l. ip ${color e0e0e0}${font sans:size=7}${addr wlan0}${font}${color}  p. ip ${color e0e0e0}${font sans:size=7}${execi 1800 wget -q -O - http://ip.tupeux.com | tail }${color}${font}  |  wifi "${color e0e0e0}${font sans:size=7}${wireless_essid wlan0}${color}${font}" ${wireless_bitrate wlan0} ${wireless_link_qual_perc wlan0}%${color}  |  Gmail : ${color2}${font sans:size=7}${execi 300 python ~/.conky/gmail.py}${color}${font}  |${goto 1615}${color 8f8f8f}| ${color} ${if_existing /proc/net/route eth0}Signal: ${color e0e0e0}${wireless_link_qual eth0}%${color}  ${color 82BA00}Up :${color} ${color e0e0e0}${upspeed eth0} kb/s${color}  ${color 82BA00}Down :${color} ${color e0e0e0}${downspeed eth0} kb/s${color} ${color 82BA00}Total :${color} ${color e0e0e0}${totaldown eth0}${color}${else}${if_existing /proc/net/route wlan0}${color d64937}${font sans:size=7}Up :${color}${font} ${color e0e0e0}${upspeed wlan0} kb/s${color}  ${color d64937}${font sans:size=7}Down :${color}${font} ${color e0e0e0}${downspeed wlan0} kb/s${color} ${color d64937}${font sans:size=7}Total down :${color}${font} ${color e0e0e0}${totaldown wlan0}${color}${endif}${else}Network Unavailable${endif}

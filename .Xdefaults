@@ -1,6 +1,6 @@
 URxvt.saveLines:9001
 URxvt.scrollBar: false
-URxvt*geometry: 80x20
+URxvt*geometry: 90x30
 #URxvt*.transparent: true
 #URxvt*.shading: 15 
 
