@@ -1,0 +1,70 @@
+
+<!-- saved from url=(1674)data:text/plain,!%20---%20~%2F.Xresources%20------------------------------------------------------------%0A!%20------------------------------------------------------------------------------%0A!%20---%20generated%20with%204bit%20Terminal%20Color%20Scheme%20Designer%20-----------------------%0A!%20------------------------------------------------------------------------------%0A!%20---%20http%3A%2F%2Fciembor.github.com%2F4bit%20-------------------------------------------%0A!%20------------------------------------------------------------------------------%0A%0A!%20---%20special%20colors%20---%0A%0A*background%3A%20%230d1926%0A*foreground%3A%20%23d9e6f2%0A%0A!%20---%20standard%20colors%20---%0A%0A!%20black%0A*color0%3A%20%23000000%0A%0A!%20bright_black%0A*color8%3A%20%23262626%0A%0A!%20red%0A*color1%3A%20%23ac6565%0A%0A!%20bright_red%0A*color9%3A%20%23d9b8b8%0A%0A!%20green%0A*color2%3A%20%2365ac65%0A%0A!%20bright_green%0A*color10%3A%20%23b8d9b8%0A%0A!%20yellow%0A*color3%3A%20%23acac65%0A%0A!%20bright_yellow%0A*color11%3A%20%23d9d9b8%0A%0A!%20blue%0A*color4%3A%20%236565ac%0A%0A!%20bright_blue%0A*color12%3A%20%23b8b8d9%0A%0A!%20magenta%0A*color5%3A%20%23ac65ac%0A%0A!%20bright_magenta%0A*color13%3A%20%23d9b8d9%0A%0A!%20cyan%0A*color6%3A%20%2365acac%0A%0A!%20bright_cyan%0A*color14%3A%20%23b8d9d9%0A%0A!%20white%0A*color7%3A%20%23d9d9d9%0A%0A!%20bright_white%0A*color15%3A%20%23ffffff%0A%0A%0A!%20------------------------------------------------------------------------------%0A!%20---%20end%20of%20terminal%20colors%20section%20-------------------------------------------%0A!%20------------------------------------------------------------------------------%0A%0A -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
+
+! --- special colors ---
+
+*background: #0d1926
+*foreground: #d9e6f2
+
+! --- standard colors ---
+
+! black
+*color0: #000000
+
+! bright_black
+*color8: #262626
+
+! red
+*color1: #ac6565
+
+! bright_red
+*color9: #d9b8b8
+
+! green
+*color2: #65ac65
+
+! bright_green
+*color10: #b8d9b8
+
+! yellow
+*color3: #acac65
+
+! bright_yellow
+*color11: #d9d9b8
+
+! blue
+*color4: #6565ac
+
+! bright_blue
+*color12: #b8b8d9
+
+! magenta
+*color5: #ac65ac
+
+! bright_magenta
+*color13: #d9b8d9
+
+! cyan
+*color6: #65acac
+
+! bright_cyan
+*color14: #b8d9d9
+
+! white
+*color7: #d9d9d9
+
+! bright_white
+*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+
+</pre></body></html>
