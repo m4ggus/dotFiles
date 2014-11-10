@@ -14,6 +14,9 @@
 #--with-fpm-group=www-data \
 #--enable-fpm \
 
+# pgsql
+#--with-pdo-pgsql=/usr \
+#--with-pgsql=/usr \
 
 PHP_AVAILABLE_VERSIONS=$(curl -s http://de2.php.net/downloads.php | grep -P '<a href=".*">.+?.tar.bz2' | sed -e 's/.*\<a href\="[^\php-]*\(.*\)/\1/g' -e 's/\.tar.bz2.*//g')
 
@@ -56,35 +59,39 @@ echo "Press CTRL-C to cancel or ENTER to continue ..."
 ./configure \
     --prefix=/opt/php/${PHP_BASE} \
     --with-config-file-path=/opt/php/${PHP_BASE}/etc \
+    --with-zlib-dir=/usr \
+	--with-freetype-dir=/usr \
+    --with-libdir=/lib/x86_64-linux-gnu \
+    --with-jpeg-dir=/usr \
+    --with-openssl-dir=/usr \
+    --with-png-dir=/usr \
+    --with-xpm-dir=/usr \
     --disable-short-tags \
+    --enable-cgi \
     --with-mysql=mysqlnd \
     --with-mysqli=mysqlnd \
-    --with-pgsql=/usr \
     --with-tidy=/usr \
     --with-curl=/usr/bin \
-    --with-openssl-dir=/usr \
-    --with-zlib-dir=/usr \
-    --with-xpm-dir=/usr \
-    --with-pdo-pgsql=/usr \
     --with-pdo-mysql=mysqlnd \
     --with-xsl=/usr \
     --with-ldap \
     --with-xmlrpc \
+	--with-openssl \
     --with-iconv-dir=/usr \
     --with-snmp=/usr \
     --enable-sockets \
+	--enable-sysvsem \
+	--enable-sysvshm \
     --enable-exif \
     --enable-ftp \
+	--enable-intl \
+	--enable-dba \
+	--enable-gd-native-ttf \
     --enable-calendar \
     --with-bz2=/usr \
     --with-mcrypt=/usr \
     --with-gd \
-    --with-jpeg-dir=/usr \
-    --with-png-dir=/usr \
     --enable-mbstring \
     --enable-zip \
     --with-pear \
-    --with-libdir=/lib/x86_64-linux-gnu \
-    --enable-cgi
-
-
+	--enable-gd-native-ttf
