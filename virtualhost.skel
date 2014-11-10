@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+	ServerAdmin WEBMASTER@EXAMPLE.COM
+	ServerName EXAMPLE.COM
+	ServerAlias WWW.EXAMPLE.COM
+	DocumentRoot /var/www/EXAMPLE-COM
+	<Directory "/var/www/EXAMPLE-COM">
+		FCGIWrapper /PATH/TO/BINARY/php-cgi .php
+		<FilesMatch \.php$>
+			SetHandler fcgid-script
+		</FilesMatch>
+		Options +ExecCGI
+		AllowOverride all
+	</Directory>
+</VirtualHost>
