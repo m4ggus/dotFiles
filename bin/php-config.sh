@@ -18,6 +18,10 @@
 #--with-pdo-pgsql=/usr \
 #--with-pgsql=/usr \
 
+# IMAP
+#    --with-imap \
+#    --with-imap-ssl \
+
 PHP_AVAILABLE_VERSIONS=$(curl -s http://de2.php.net/downloads.php | grep -P '<a href=".*">.+?.tar.bz2' | sed -e 's/.*\<a href\="[^\php-]*\(.*\)/\1/g' -e 's/\.tar.bz2.*//g')
 
 for AV in $PHP_AVAILABLE_VERSIONS; do
@@ -55,46 +59,6 @@ if ! read -s; then
     echo "aborting PHP $PHP_VERSION configure.."
     exit 255
 fi
-
-#./configure \
-#    --prefix=/opt/php/${PHP_BASE} \
-#    --with-config-file-path=/opt/php/${PHP_BASE}/etc \
-#    --with-zlib-dir=/usr \
-#	--with-freetype-dir=/usr \
-#    --with-libdir=/lib/x86_64-linux-gnu \
-#    --with-jpeg-dir=/usr \
-#    --with-openssl-dir=/usr \
-#    --with-png-dir=/usr \
-#    --with-xpm-dir=/usr \
-#    --disable-short-tags \
-#    --enable-cgi \
-#    --with-mysql=mysqlnd \
-#    --with-mysqli=mysqlnd \
-#    --with-tidy=/usr \
-#    --with-curl=/usr/bin \
-#    --with-pdo-mysql=mysqlnd \
-#    --with-xsl=/usr \
-#    --with-ldap \
-#    --with-xmlrpc \
-#	--with-openssl \
-#    --with-iconv-dir=/usr \
-#    --with-snmp=/usr \
-#    --enable-sockets \
-#	--enable-sysvsem \
-#	--enable-sysvshm \
-#    --enable-exif \
-#    --enable-ftp \
-#	--enable-intl \
-#	--enable-dba \
-#	--enable-gd-native-ttf \
-#    --enable-calendar \
-#    --with-bz2=/usr \
-#    --with-mcrypt=/usr \
-#    --with-gd \
-#    --enable-mbstring \
-#    --enable-zip \
-#    --with-pear \
-#	--enable-gd-native-ttf
 
 ./configure \
     --prefix=/opt/php/${PHP_BASE} \
@@ -139,5 +103,3 @@ fi
     --with-png-dir=/usr \
     --enable-cgi > /dev/null
 
-#    --with-imap \
-#    --with-imap-ssl \
